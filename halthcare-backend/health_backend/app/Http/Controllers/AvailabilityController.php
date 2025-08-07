@@ -14,6 +14,7 @@ class AvailabilityController extends Controller
         return response()->json($availabilities);
     }
 
+    
     public function store(Request $request)
     {
         $validated = $request->validate([
