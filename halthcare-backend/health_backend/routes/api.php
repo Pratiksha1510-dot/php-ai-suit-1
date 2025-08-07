@@ -19,6 +19,7 @@ Route::prefix('v1')->group(function () {
             Route::post('logout', [ProviderAuthController::class, 'logout']);
             Route::get('me', [ProviderAuthController::class, 'me']);
 
+            
             // Provider availability management
             Route::get('availability', [AvailabilityController::class, 'index']);
             Route::post('availability', [AvailabilityController::class, 'store']);
